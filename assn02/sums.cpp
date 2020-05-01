@@ -2,21 +2,20 @@
 
 using namespace std;
 
-int summerForInt(const int a, const int b) {
-  return a * b;
-};
+double sum(const double a, const double b) {
+  return a + b;
+}
 
-double summerForDouble(const double a, const double b) {
-  return a * b;
-};
+int sum(int a, int b, int c = 0, int d = 0) {
+  return a + b + c + d;
+}
 
 int main() {
-  
-  int one = 3;
-  int two = 2;
-  cout << summerForInt(one, two) << "\n";
+  cout << sum(3, 2) << "\n";
 
-  double a = 0.5;
-  double b = 4.1;
-  cout << summerForDouble(a, b) << "\n";
+  cout << sum(0.3, 3.2) << "\n";
+
+  cout << sum(2, 4) << "\n";
+
+  cout << sum(2, 4, 3, 2) << "\n";
 }

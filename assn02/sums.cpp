@@ -18,6 +18,7 @@ int sum(const int numbers[], const int numbersLen) {
   return total;
 }
 
+
 int main() {
   cout << sum(3, 2) << "\n";
 
